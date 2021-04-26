@@ -24,18 +24,8 @@
     "phpcq/plugin-api": "^1.0@dev"
   },
   "require-dev": {
-    "phpcq/runner-bootstrap": "^1.0@dev"
-  },
-  "extra": {
-    "phpcq": {
-      "file": "src/phploc.php",
-      "plugin-version": "1.0.0",
-      "requirements": {
-        "tool": {
-          "phploc": "^3.0 || ^4.0 || ^5.0 || ^6.0"
-        }
-      }
-    }
+    "phpcq/runner-bootstrap": "^1.0@dev",
+    "phpcq/schema": "^1.0@dev"
   },
   "autoload-dev": {
     "psr-4": {
