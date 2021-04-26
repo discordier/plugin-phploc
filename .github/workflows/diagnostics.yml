@@ -3,7 +3,7 @@ name: Code Quality Diagnostics
 env:
   PHPCQ_DIRECTORY: ./phpcq-runner
 
-on: [pull_request]
+on: [pull_request, push]
 
 jobs:
   build:
@@ -35,13 +35,7 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
 
       - name: Install phpcq toolchain
-        run: $GITHUB_WORKSPACE/phpcq install -v
+        run: $GITHUB_WORKSPACE/vendor/bin/phpcq install -v
 
       - name: Run tests
-        run: $GITHUB_WORKSPACE/phpcq run -o github-action -o default
-
-      - name: Compile .phar file
-        run: $GITHUB_WORKSPACE/phpcq run build -v
-
-      - name: Run .phar file
-        run: $GITHUB_WORKSPACE/phpcq.phar -v
+        run: $GITHUB_WORKSPACE/vendor/bin/phpcq run -o github-action -o default
