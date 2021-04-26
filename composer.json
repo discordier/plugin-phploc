@@ -1,0 +1,45 @@
+{
+  "name": "phpcq/plugin-phploc",
+  "type": "phpcq-plugin",
+  "description": "Bootstrap library for phpcq.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christian Schiffler",
+      "email": "c.schiffler@cyberspectrum.de",
+      "homepage": "http://cyberspectrum.de",
+      "role": "lead"
+    },
+    {
+      "name": "David Molineus",
+      "email": "david.molineus@netzmacht.de",
+      "homepage": "https://netzmacht.de",
+      "role": "lead"
+    }
+  ],
+  "require": {
+    "php": "^7.3 || ^8.0",
+    "ext-dom": "*",
+    "ext-json": "*",
+    "phpcq/plugin-api": "^1.0@dev"
+  },
+  "require-dev": {
+    "phpcq/runner-bootstrap": "^1.0@dev"
+  },
+  "extra": {
+    "phpcq": {
+      "file": "src/phploc.php",
+      "plugin-version": "1.0.0",
+      "requirements": {
+        "tool": {
+          "phploc": "^3.0 || ^4.0 || ^5.0 || ^6.0"
+        }
+      }
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Phpcq\\BootstrapTest\\": "tests"
+    }
+  }
+}
