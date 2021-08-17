@@ -11,11 +11,15 @@
     },
     "tool": {
       "phploc": {
-        "constraints": "^3.0 || ^4.0 || ^5.0 || ^6.0",
+        "constraints": "^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0",
         "sources": [
           {
             "type": "github",
             "repository": "sebastianbergmann/phploc"
+          },
+          {
+            "type": "phar.io",
+            "url": "https://phar.phpunit.de/phive.xml"
           }
         ]
       }
