@@ -146,12 +146,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpcq/schema.git",
-                "reference": "3aad343a3c4ceadcf7f54281ffdeb1f451987053"
+                "reference": "3c0ce7ec8e4399b4800b418efe9300210c253cbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpcq/schema/zipball/3aad343a3c4ceadcf7f54281ffdeb1f451987053",
-                "reference": "3aad343a3c4ceadcf7f54281ffdeb1f451987053",
+                "url": "https://api.github.com/repos/phpcq/schema/zipball/3c0ce7ec8e4399b4800b418efe9300210c253cbe",
+                "reference": "3c0ce7ec8e4399b4800b418efe9300210c253cbe",
                 "shasum": ""
             },
             "default-branch": true,
@@ -194,7 +194,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-26T14:28:00+00:00"
+            "time": "2021-08-17T19:02:55+00:00"
         }
     ],
     "aliases": [],
